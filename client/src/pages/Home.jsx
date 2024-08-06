@@ -6,7 +6,6 @@ import { axiosClientLogin, axiosClientGetAdmin } from '../axiosClient.js'
 
 // Components
 import { Hero } from '../components/Hero.jsx'
-import { LogoComponent } from '../components/LogoComponent.jsx'
 import { Services } from '../components/Services.jsx'
 import { About } from '../components/About.jsx'
 import { Reviews } from '../components/Reviews.jsx'
@@ -53,7 +52,6 @@ export const Home = () => {
             ):(
                 <>
                     <Hero/>
-                    <LogoComponent/>
                     <Services/>
                     <About/>
                     <Reviews/>

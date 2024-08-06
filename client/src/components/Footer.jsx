@@ -1,8 +1,6 @@
-import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { Link } from 'react-router-dom' 
 import { useAppContext } from '../context/AppProvider.jsx'
 
-import Hub from '../assets/hub.png'
 
 export const Footer = () => {
     let date = new Date()
@@ -15,9 +13,7 @@ export const Footer = () => {
             <section id='upper-footer'>
                 <h4>Seth Zarkovich</h4>
                 <div className="broker-container">
-                    <p>Insurance Broker - <br/>
-                    Hub International Ontario Ltd.</p>
-                    <LazyLoadImage className='hub-logo' src={Hub}/>
+                    <p>Insurance Broker</p>
                 </div>
        
                 <hr />

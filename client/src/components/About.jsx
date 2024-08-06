@@ -23,26 +23,26 @@ export const About = () => {
       },
     ];
 
-    const aboutHubData = [
-      {
-        iconName: 'fa-solid fa-mobile-screen',
-        title: 'Global',
-        description:
-          'Hub is recognized globally in the insurance industry! Since 1998, Hub has specialized in providing insurance coverage to the North American region, and quickly expanded into many other countries.',
-      },
-      {
-        iconName: 'fa-solid fa-book',
-        title: 'Resourceful',
-        description:
-          'Hub has a roster of experienced and friendly brokers always willing to help. If your broker is unsure about something, it is garaunteed that there is a senior broker in the office who will have the answers!',
-      },
-      {
-        iconName: 'fa-solid fa-business-time',
-        title: 'Committed',
-        description:
-          'Committed to servicing clients all around the world! Hub has no plans of slowing down growth, and is constantly training its brokers to be the best in the industry.',
-      },
-    ];
+    // const aboutHubData = [
+    //   {
+    //     iconName: 'fa-solid fa-mobile-screen',
+    //     title: 'Global',
+    //     description:
+    //       'Hub is recognized globally in the insurance industry! Since 1998, Hub has specialized in providing insurance coverage to the North American region, and quickly expanded into many other countries.',
+    //   },
+    //   {
+    //     iconName: 'fa-solid fa-book',
+    //     title: 'Resourceful',
+    //     description:
+    //       'Hub has a roster of experienced and friendly brokers always willing to help. If your broker is unsure about something, it is garaunteed that there is a senior broker in the office who will have the answers!',
+    //   },
+    //   {
+    //     iconName: 'fa-solid fa-business-time',
+    //     title: 'Committed',
+    //     description:
+    //       'Committed to servicing clients all around the world! Hub has no plans of slowing down growth, and is constantly training its brokers to be the best in the industry.',
+    //   },
+    // ];
 
     const { scrollToTop } = useAppContext()
   
@@ -62,9 +62,10 @@ export const About = () => {
             </div>
           </div>
         ))}
-        <hr className='about-underline'/>
+        
+        {/* <hr className='about-underline'/> */}
 
-        <h1>Why Choose Hub</h1>
+        {/* <h1>Why Choose Hub</h1>
         <p>Globally Recognized Insurance Brokerage.</p>
         {aboutHubData.map((item, index) => (
           <div className="about-container" key={index}>
@@ -76,7 +77,7 @@ export const About = () => {
               <p>{item.description}</p>
             </div>
           </div>
-        ))}
+        ))} */}
         
         <Link className='about-quote-btn' to='/guest/quote/auto-quote' onClick={scrollToTop}>Get a Quote</Link>
       </section>
