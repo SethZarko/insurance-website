@@ -12,7 +12,7 @@ export const Reviews = () => {
 
   const fetchReviews = async () => {
     try {
-      let res = await fetch('http://localhost:8000/api/reviews/all')
+      let res = await fetch('https://insurance-website-api.onrender.com/api/reviews/all')
 
       if (res.ok) {
         let json = await res.json()

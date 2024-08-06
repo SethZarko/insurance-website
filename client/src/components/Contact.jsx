@@ -8,7 +8,7 @@ export const Contact = () => {
   const [serverFormError, setServerFormError] = useState([]);
 
   const handleForm = (values, actions) => {
-    fetch('http://localhost:8000/api/contact/create', {
+    fetch('https://insurance-website-api.onrender.com/api/contact/create', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

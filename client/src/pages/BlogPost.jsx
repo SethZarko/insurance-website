@@ -63,7 +63,7 @@ export const singlePostLoader = async ({ params }) => {
   try {
     const ID = params.id;
 
-    const response = await fetch(`http://localhost:8000/api/blog/${ID}`);
+    const response = await fetch(`https://insurance-website-api.onrender.com/api/blog/${ID}`);
 
     if (!response.ok) {
       throw Error('Failed to fetch posts');

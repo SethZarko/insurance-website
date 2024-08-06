@@ -228,7 +228,7 @@ export const Blog = () => {
 // Loader Function
 export const postLoader = async () => {
   try {
-    const response = await fetch('http://localhost:8000/api/blog/all');
+    const response = await fetch('https://insurance-website-api.onrender.com/api/blog/all');
 
     if (!response.ok) {
       throw Error('Failed to fetch posts');

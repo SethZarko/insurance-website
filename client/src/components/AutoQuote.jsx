@@ -8,7 +8,7 @@ export const AutoQuote = () => {
   const [serverFormError, setServerFormError] = useState([]);
 
   const handleForm = (values, actions) => {
-    fetch('http://localhost:8000/api/quote/create', {
+    fetch('https://insurance-website-api.onrender.com/api/quote/create', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
